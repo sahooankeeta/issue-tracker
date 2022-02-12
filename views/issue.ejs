@@ -1,0 +1,9 @@
+<div id="issue-<%=issue.id%>" class="issueItem">
+  <div class="issue-title"><%=issue.title%></div>
+  <div class="issue-author"><%=issue.author%></div>
+  <div class="issue-description"><%=issue.description%></div>
+  <div class="labelContainer"></div>
+  <%for(l of issue.labels){%>
+  <div class="labelItem"><%=l%></div>
+  <%}%>
+</div>

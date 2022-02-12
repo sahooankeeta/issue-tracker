@@ -1,0 +1,100 @@
+main {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+}
+.btn {
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #353938;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+.empty {
+  font-size: 3rem;
+}
+.issueContainer {
+  display: grid;
+  grid-row-gap: 20px;
+}
+.issueItem {
+  padding: 25px 20px;
+  border: 1px solid #353938;
+  height: fit-content;
+  width: fit-content;
+}
+.issue-title {
+  font-size: 2.5rem;
+}
+.issue-author {
+  font-weight: 600;
+  font-size: 2rem;
+}
+.issue-description {
+  padding-top: 10px;
+  margin-top: 10px;
+  border-top: 1px solid black;
+  font-size: 1.9rem;
+}
+.labelContainer {
+  display: flex;
+  margin: 10px 0;
+}
+.labelItem {
+  position: relative;
+  display: inline-block;
+  background-color: gainsboro;
+  color: black;
+  padding: 4px 15px;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.projectDetails {
+  font-size: 2rem;
+  padding: 0 10px;
+}
+.projectDetails h2 {
+  border-bottom: 1px solid grey;
+  text-transform: capitalize;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+.projectDetails div {
+  margin-bottom: 10px;
+}
+.projectDetails h3 {
+  text-transform: capitalize;
+}
+.issueActions {
+  display: flex;
+  align-items: center;
+}
+.issueActions a {
+  margin-right: 20px;
+}
+.issueActions form input {
+  margin: 0 10px;
+}
+#filter-form {
+  font-size: 2rem;
+}
+#filter-form select,
+input,
+option {
+  padding: 10px 15px;
+  font-size: inherit;
+}
+/* #filter-form button {
+  padding: 10px 15px;
+  background-color: #353938;
+  color: wheat;
+  font-weight: 500;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+} */

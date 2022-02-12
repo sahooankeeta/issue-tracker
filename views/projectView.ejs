@@ -1,0 +1,39 @@
+<link rel="stylesheet" href="/css/projectView.css" />
+
+<main>
+  <div class="projectDetails">
+    <h2>project details</h2>
+    <div>
+      <h3>name</h3>
+      <p><%=project.name%></p>
+    </div>
+    <div>
+      <h3>author</h3>
+      <p><%=project.author%></p>
+    </div>
+    <div>
+      <h3>description</h3>
+      <p><%=project.description%></p>
+    </div>
+  </div>
+  <div class="issueContainer">
+    <div class="issueActions">
+      <a class="btn" href="/issues/form/<%=project.id%>">create issue</a>
+      <form action="/projects/<%=project.id%>" id="filter-form" method="post">
+        <select name="filter">
+          <option value="labels">labels</option>
+          <option value="author">author</option>
+          <option value="title">issue title</option>
+          <option value="description">issue description</option>
+        </select>
+        <input type="text" name="filterValue" />
+        <input type="hidden" name="projectId" value="<%=project.id%>" />
+        <button class="btn" type="submit">filter</button>
+      </form>
+    </div>
+
+    <%if(issues.length==0){%>
+    <div class="empty">No issues till now</div>
+    <%}else{%> <% for(issue of issues){%> <%- include('issue')%> <%}%> <%}%>
+  </div>
+</main>

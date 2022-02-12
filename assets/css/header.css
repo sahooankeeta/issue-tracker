@@ -1,0 +1,14 @@
+header {
+  padding: 2.5rem 3.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #353938;
+
+  margin-bottom: 20px;
+}
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 2.5rem;
+}

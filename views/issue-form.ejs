@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/css/form.css" />
+<h1>create new issue form</h1>
+<form action="/issues/create" method="POST">
+  <input type="text" placeholder="issue title" name="title" required />
+  <input type="text" placeholder="author name" name="author" required />
+  <textarea
+    placeholder="issue description"
+    name="description"
+    required
+    rows="4"
+  ></textarea>
+  <input type="text" placeholder="comma separated labels" name="labels" />
+  <input type="hidden" name="projectId" value="<%=id%>" />
+  <button type="submit">submit</button>
+</form>

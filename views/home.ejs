@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="/css/home.css" />
+<main>
+  <div>
+    <a class="btn" href="/projects/form">New Project</a>
+  </div>
+  <% if(projects.length==0){%>
+  <h2 class="empty">No projects to show</h2>
+  <%}else{%>
+  <div class="projectContainer">
+    <% for(project of projects){%> <%- include('project')%> <%}%>
+  </div>
+  <%}%>
+</main>

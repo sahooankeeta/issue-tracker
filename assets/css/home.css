@@ -1,0 +1,53 @@
+a {
+  padding: 10px 15px;
+  text-decoration: none;
+  background-color: #353938;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+main {
+  display: grid;
+  grid-row-gap: 20px;
+  padding: 20px;
+}
+.projectContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.projectItem {
+  font-size: 2.2rem;
+  border: 1px solid #4d4e4e;
+  background-color: #dad9d9;
+  border-radius: 20px;
+  color: black;
+  height: min-content;
+}
+.project-title {
+  font-size: 3rem;
+}
+.project-author {
+  font-weight: 100;
+}
+.project-description {
+  border-top: 1px solid black;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-weight: 100;
+  font-size: 1.8rem;
+}
+.btn {
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background-color: #353938;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+.empty {
+  font-size: 3rem;
+}
